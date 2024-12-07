@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Search Movie</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="background">
+    <!-- Login and Register Form Container -->
+    <div class="container" id="login-container">
+        <!-- Logo Image -->
+        <div class="logo">
+            <img src="./assets/img.png" alt="Logo" width="100">
+        </div>
+
+        <!-- Login Form -->
+        <div id="login-form" class="form">
+            <h2>Login</h2>
+            <input type="email" id="login-email" placeholder="Email" required>
+            <input type="password" id="login-password" placeholder="Password" required>
+            <button onclick="handleLogin()">Login</button>
+            <p class="toggle-link" onclick="toggleForm('register')">Belum punya akun? Daftar di sini</p>
+        </div>
+
+        <!-- Register Form -->
+        <div id="register-form" class="form" style="display: none;">
+            <h2>Register</h2>
+            <input type="text" id="register-username" placeholder="Nama" required>
+            <input type="email" id="register-email" placeholder="Email" required>
+            <input type="password" id="register-password" placeholder="Password" required>
+            <button onclick="handleRegister()">Register</button>
+            <p class="toggle-link" onclick="toggleForm('login')">Sudah punya akun? Login di sini</p>
+        </div>
+    </div>
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

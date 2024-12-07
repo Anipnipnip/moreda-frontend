@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.fade {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;  /* Durasi lebih lama */
+}
+
+
+
+/* You may also want to prevent text and elements from fading if you want only the background to fade */
+body, .container, .form, .container-2, #search-container {
+    transition: opacity 10s ease-in-out;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 10px;
+    background-color: #f4f4f4;
+}
+
+body.background {
+    background-image: url('assets/bg.png');  /* Ganti dengan path gambar kamu */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 20px;  /* Pastikan konten tidak tertutup */
+}
+
+body.page-background {
+    background-image: url('assets/bg2.png');  /* Ganti dengan path gambar kamu */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 20px;  /* Pastikan konten tidak tertutup */
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo img {
+    max-width: 100px;
+    height: auto;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form h2 {
+    text-align: center;
+    color: #333;
+}
+
+.form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.form button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #333;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.form button:hover {
+    background-color: #444;
+}
+
+.toggle-link {
+    text-align: center;
+    color: #333;
+    cursor: pointer;
+}
+
+.toggle-link:hover {
+    text-decoration: underline;
+}
+
+.container-2 {
+    width: 100%;
+    max-width: 400px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Search Movie Container */
+#search-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#search-container input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    color: #333;
+    width: 100%;
+}
+
+#search-container button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #333;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+}
+
+#search-container button:hover {
+    background-color: #444;
+}
+
+/* Results Section */
+#results {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    align-items: center;
+}
+
+#results div {
+    width: 100%;
+    max-width: 350px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+#results div:hover {
+    transform: scale(1.05);
+}
+
+#results div span {
+    font-weight: bold;
+    display: block;
+    margin-top: 5px;
+}
+
